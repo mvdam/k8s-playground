@@ -35,6 +35,12 @@ spec:
                 configMapKeyRef:
                   name: mongodb-configmap
                   key: database_url
+            - name: ME_CONFIG_BASICAUTH
+              valueFrom:
+                configMapKeyRef:
+                  name: mongodb-configmap
+                  key: basic_auth
+
 ---
 apiVersion: v1
 kind: Service

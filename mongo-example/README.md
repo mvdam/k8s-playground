@@ -8,7 +8,11 @@ kubectl apply -f mongo-configmap.yaml
 kubectl apply -f mongo-express.yaml
 
 kubectl delete -f mongo-express.yaml
+kubectl delete -f mongo.yaml
 ```
+
+Enable Ingress Controller
+`minikube addons enable ingress`
 
 Important notes:
 
